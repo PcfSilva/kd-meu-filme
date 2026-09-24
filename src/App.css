@@ -36,4 +36,5 @@ body {
   color: var(--text-primary);
   font-family: var(--font-primary);
   font-weight: regular;
+  overflow: hidden;
 }

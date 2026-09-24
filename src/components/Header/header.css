@@ -1,0 +1,32 @@
+.header {
+  background-image: url("../../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1.25em;
+  height: 3.125em;
+
+  & nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 9.375em;
+
+    & ul {
+      display: flex;
+      align-self: center;
+      list-style: none;
+      gap: 1.5625em;
+      text-transform: uppercase;
+    }
+
+    & input {
+      width: 28.125em;
+      height: 2.5em;
+      border-radius: .375em;
+      border: none;
+      outline: none;
+      padding-inline: .5em;
+    }
+  }
+}
