@@ -1,0 +1,22 @@
+.home {
+  margin-inline: 20px;
+
+  & .movie-container {
+    display: flex;
+    gap: .375em;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  & article {
+    height: 50svh;
+  }
+
+  & img {
+    max-height: 85%;
+  }
+}

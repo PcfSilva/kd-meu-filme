@@ -3,7 +3,7 @@ import RoutesApp from './Routes'
 
 export default function () {
   return (
-    <div>
+    <div className='app'>
       <RoutesApp />
     </div>
   )

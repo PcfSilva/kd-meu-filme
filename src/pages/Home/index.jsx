@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 
+import "./home.css"
+
 export default function Home() {
   const [movies, setMovies] = useState([])
   useEffect(() => {
@@ -12,20 +14,23 @@ export default function Home() {
         }
       })
       console.log(api.data.results)
-      setMovies(api.data.results.slice(0, 10))
+      setMovies(api.data.results)
     }
     loadingMovies()
   }, [])
 
   return (
     <div className="home">
-      {movies.map((movie) => (
-        <article key={movie.id}>
-          <img src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt={movie.title} />
-          {movie.title}
-        </article>
-      )
-      )}
+      <h2>Filmes em cartaz</h2>
+      <div className="movie-container">
+        {movies.map((movie) => (
+          <article key={movie.id}>
+            <img src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt={movie.title} />
+            {movie.title}
+          </article>
+        )
+        )}
+      </div>
     </div>
   )
 }
