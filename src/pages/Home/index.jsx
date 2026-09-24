@@ -1,9 +1,23 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-
 import "./home.css"
+import { Link } from "react-router"
 
 export default function Home() {
+
+
+  return (
+    <div>
+      <div className="home">
+        <h1>Click e descubra...</h1>
+        <p>Filmes, séries e muito entretenimento!</p>
+      </div>
+      <NowPlaying />
+    </div>
+  )
+}
+
+export function NowPlaying() {
   const [movies, setMovies] = useState([])
   useEffect(() => {
     async function loadingMovies() {
@@ -18,15 +32,16 @@ export default function Home() {
     }
     loadingMovies()
   }, [])
-
   return (
-    <div className="home">
+    <div className="now-playing">
       <h2>Filmes em cartaz</h2>
       <div className="movie-container">
         {movies.map((movie) => (
           <article key={movie.id}>
-            <img src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt={movie.title} />
-            {movie.title}
+            <Link>
+              <img src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt={movie.title} title={movie.title} />
+              <span>{movie.title}</span>
+            </Link>
           </article>
         )
         )}

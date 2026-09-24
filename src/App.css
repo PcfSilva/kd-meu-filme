@@ -1,10 +1,39 @@
+:root {
+  --font-primary: 'Outfit', sans-serif;
+
+  --bg-primary: #0B1622;
+  --bg-secondary: #0D253F;
+
+  --primary: #01B4E4;
+  --secondary: #90CEA1;
+
+  --accent: #F5C518;
+
+  --card: #161616;
+  --card-secondary: #182B3A;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #A8B3BD;
+
+  --danger: #E50914;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
 .app {
-  width: 100%;
+  width: 95%;
   height: 100svh;
+  margin-inline: auto;
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-weight: regular;
 }

@@ -1,0 +1,41 @@
+<svg width="360" height="90" viewBox="0 0 360 90"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Símbolo -->
+  <g transform="translate(8 10)">
+
+    <!-- Círculo -->
+    <circle cx="35" cy="35" r="32"
+            fill="#0D253F"
+            stroke="#01B4E4"
+            stroke-width="4"/>
+
+    <!-- Play -->
+    <path d="M27 19 L27 51 L51 35 Z"
+          fill="#01B4E4"/>
+
+    <!-- Pequeno destaque -->
+    <circle cx="53" cy="17" r="5"
+            fill="#F5C518"/>
+  </g>
+
+  <!-- KD -->
+  <text x="85" y="47"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="36"
+        font-weight="800"
+        fill="#FFFFFF">
+    KD
+  </text>
+
+  <!-- MEU FILME -->
+  <text x="86" y="69"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="17"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#01B4E4">
+    MEU FILME
+  </text>
+
+</svg>
