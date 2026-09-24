@@ -38,3 +38,9 @@ body {
   font-weight: regular;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .app {
+    width: 90%;
+  }
+}

@@ -1,16 +1,23 @@
 import SearchMovie from "../SearchMovies"
+import logo from "../../assets/logo.svg"
 import "./header.css"
+import { Link } from "react-router"
 
 export default function Header() {
   return (
     <header className="header">
+      <img src={logo} alt="Logo do site" />
       <nav>
         <ul>
-          <li>Filmes</li>
-          <li>Séries</li>
+          <li>
+            <Link>Filmes</Link>
+          </li>
+          <li>
+            <Link>Séries</Link>
+          </li>
         </ul>
-        <SearchMovie />
       </nav>
+      <SearchMovie />
     </header>
   )
 }

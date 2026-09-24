@@ -1,16 +1,15 @@
 .header {
-  background-image: url("../../assets/logo.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: flex;
+  align-items: center;
   margin-top: 1.25em;
-  height: 3.125em;
+  gap: 1.5625em;
+
+  & img {
+    height: 3.125em;
+  }
 
   & nav {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 9.375em;
+    margin-left: auto;
 
     & ul {
       display: flex;
@@ -18,15 +17,35 @@
       list-style: none;
       gap: 1.5625em;
       text-transform: uppercase;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.6s;
+        padding: .375em .625em;
+        border-radius: .375em;
+
+        &:hover {
+          background-color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    flex-wrap: wrap;
+    gap: .75em;
+
+    & img {
+      height: 2.8125em;
     }
 
-    & input {
-      width: 28.125em;
-      height: 2.5em;
-      border-radius: .375em;
-      border: none;
-      outline: none;
-      padding-inline: .5em;
+    & nav {
+      margin-left: auto;
+      line-height: 3.125em;
     }
   }
 }
