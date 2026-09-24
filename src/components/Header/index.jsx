@@ -1,3 +1,4 @@
+import SearchMovie from "../SearchMovies"
 import "./header.css"
 
 export default function Header() {
@@ -8,7 +9,7 @@ export default function Header() {
           <li>Filmes</li>
           <li>Séries</li>
         </ul>
-        <input type="text" placeholder="Pesquise filme e séries!" />
+        <SearchMovie />
       </nav>
     </header>
   )
