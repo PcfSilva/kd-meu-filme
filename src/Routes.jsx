@@ -8,7 +8,7 @@ import SearchResult from "./pages/SearchResult"
 
 export default function RoutesApp() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
