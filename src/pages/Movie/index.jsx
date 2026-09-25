@@ -46,7 +46,7 @@ export function Popular() {
   const [popular, setPopular] = useState([])
   useEffect(() => {
     async function loadingPopular() {
-      const result = await axios.get("https://api.themoviedb.org/3/movie/popular", {
+      const result = await axios.get("https://api.themoviedb.org/3/trending/movie/week", {
         params: {
           api_key: "486cf28af09bfe05eae35b3756702a16",
           language: "pt-BR",
@@ -59,7 +59,7 @@ export function Popular() {
   }, [])
   return (
     <div className="container-popular">
-      <h2>Populares na comunidade</h2>
+      <h2>Tendências da semana</h2>
       <div className="popular">
         {popular.map((item) => (
           <article key={item.id}>
