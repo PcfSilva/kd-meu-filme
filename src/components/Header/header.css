@@ -40,6 +40,7 @@
     gap: .75em;
 
     & img {
+      display: inline;
       height: 2.8125em;
     }
 

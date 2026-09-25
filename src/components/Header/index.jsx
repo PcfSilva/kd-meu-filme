@@ -6,7 +6,9 @@ import { Link } from "react-router"
 export default function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Logo do site" />
+      <Link to="/">
+        <img src={logo} alt="Logo do site" />
+      </Link>
       <nav>
         <ul>
           <li>

@@ -27,7 +27,6 @@ export function NowPlaying() {
           language: "pt-BR"
         }
       })
-      console.log(api.data.results)
       setMovies(api.data.results)
     }
     loadingMovies()
@@ -38,7 +37,7 @@ export function NowPlaying() {
       <div className="movie-container">
         {movies.map((movie) => (
           <article key={movie.id}>
-            <Link>
+            <Link to={`/moviedetails/${movie.id}`}>
               <img src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt={movie.title} title={movie.title} />
               <span>{movie.title}</span>
             </Link>
