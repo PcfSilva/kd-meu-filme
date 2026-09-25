@@ -12,10 +12,10 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link>Filmes</Link>
+            <Link to="/movielist">Filmes</Link>
           </li>
           <li>
-            <Link>Séries</Link>
+            <Link to="/serielist">Séries</Link>
           </li>
         </ul>
       </nav>

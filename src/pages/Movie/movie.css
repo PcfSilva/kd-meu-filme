@@ -1,0 +1,104 @@
+.container-rated {
+  margin-top: 12px;
+
+  & .top-rated {
+    display: flex;
+    gap: 6px;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    & article {
+      height: calc(50svh - 125px);
+      margin-top: 12px;
+      transition: all 0.7s;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+
+        & img {
+          max-height: 80%;
+          border-top-left-radius: .25em;
+          border-top-right-radius: .25em;
+        }
+
+        & span {
+          display: flex;
+          justify-content: center;
+          height: 2.5em;
+          line-height: 2.5em;
+          font-size: 1em;
+          background-color: var(--bg-secondary);
+          border-bottom-left-radius: .25em;
+          border-bottom-right-radius: .25em;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+
+
+.container-popular {
+  margin-top: 12px;
+
+  & .popular {
+    display: flex;
+    gap: 6px;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    & article {
+      height: calc(50svh - 125px);
+      margin-top: 12px;
+      transition: all 0.7s;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+
+        & img {
+          max-height: 80%;
+          /* max-width: 115px; */
+          border-top-left-radius: .25em;
+          border-top-right-radius: .25em;
+        }
+
+        & span {
+          display: flex;
+          justify-content: center;
+          height: 2.5em;
+          line-height: 2.5em;
+          font-size: 1em;
+          background-color: var(--bg-secondary);
+          border-bottom-left-radius: .25em;
+          border-bottom-right-radius: .25em;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container-rated,
+  .container-popular {
+    & h2 {
+      font-size: 22px;
+    }
+  }
+}
