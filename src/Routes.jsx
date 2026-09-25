@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import MovieDetails from "./pages/MovieDetails"
 import Movie from "./pages/Movie"
 import Serie from "./pages/Serie"
+import SearchResult from "./pages/SearchResult"
 
 export default function RoutesApp() {
   return (
@@ -14,6 +15,7 @@ export default function RoutesApp() {
         <Route path="/moviedetails/:id" element={<MovieDetails />} />
         <Route path="/movielist" element={<Movie />} />
         <Route path="/serielist" element={<Serie />} />
+        <Route path="/search" element={<SearchResult />} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,0 +1,68 @@
+.search-result {
+  width: 100%;
+  padding: 0 35px 30px;
+  box-sizing: border-box;
+}
+
+.search-result h2 {
+  margin: 20px 0 15px;
+  color: white;
+}
+
+
+/* GRID */
+
+.search-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill,
+      minmax(130px, 1fr));
+
+  gap: 8px;
+
+  width: 100%;
+}
+
+
+/* CARD */
+
+.movie-card {
+  min-width: 0;
+  overflow: hidden;
+
+  background: #10243a;
+  border-radius: 4px;
+}
+
+
+/* POSTER */
+
+.movie-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+
+  object-fit: cover;
+  display: block;
+}
+
+
+/* TÍTULO */
+
+.movie-title {
+  padding: 7px 6px;
+
+  color: #fff;
+
+  font-size: 14px;
+  line-height: 1.2;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .search-result h2 {
+    font-size: 18px;
+  }
+}

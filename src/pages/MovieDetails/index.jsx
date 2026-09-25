@@ -16,7 +16,6 @@ export default function MovieDetails() {
           language: "pt-BR"
         }
       })
-      console.log(response.data)
       setMovie(response.data)
     }
     loadingMovie()
@@ -37,6 +36,7 @@ export default function MovieDetails() {
           </div>
           <p className="description">
             {movie.overview}
+            {movie.release_date}
           </p>
         </div>
       </div>
