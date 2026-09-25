@@ -16,6 +16,7 @@ export default function RoutesApp() {
         <Route path="/movielist" element={<Movie />} />
         <Route path="/serielist" element={<Serie />} />
         <Route path="/search" element={<SearchResult />} />
+
       </Routes>
     </BrowserRouter>
   )
